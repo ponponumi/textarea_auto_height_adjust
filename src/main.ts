@@ -86,8 +86,10 @@ class TextareaAutoHeightAddjust{
     addjustAll(oninputMode = true) {
         // 全てのtextareaに適用する
         let textareas = document.querySelectorAll("textarea");
+        let addjust = this;
+
         textareas.forEach(textarea => {
-            console.log(textarea);
+            addjust.addjustElem(textarea);
         });
     }
 }
