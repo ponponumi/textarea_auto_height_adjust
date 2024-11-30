@@ -1,0 +1,8 @@
+test/ export-ignore
+.editorconfig export-ignore
+.gitignore export-ignore
+.npmignore export-ignore
+index.html export-ignore
+package-lock.json export-ignore
+vite.config.js export-ignore
+.gitattributes export-ignore
