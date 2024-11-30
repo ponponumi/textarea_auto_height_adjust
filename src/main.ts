@@ -7,7 +7,7 @@ class TextareaAutoHeightAddjust{
         return output;
     }
 
-    private addjustElemCore(elem: HTMLElement, changeFunc: (check: boolean) => void = () => {}) {
+    private addjustElemCore(elem: HTMLElement, changeFunc: (check: boolean,styleData: object) => void = () => {}) {
         const textareaCheck = (elem.tagName === "TEXTAREA");
 
         if (!textareaCheck) {
@@ -82,10 +82,10 @@ class TextareaAutoHeightAddjust{
 
         console.log(styleData);
 
-        changeFunc(changeCheck);
+        changeFunc(changeCheck,styleData);
     }
 
-    public addjustElem(elem,oninputMode=true,changeFunc: (check: boolean) => void = () => {}) {
+    public addjustElem(elem,oninputMode=true,changeFunc: (check: boolean,styleData: object) => void = () => {}) {
         const elemCheck = elem instanceof HTMLElement;
 
         if (elemCheck) {
@@ -105,12 +105,12 @@ class TextareaAutoHeightAddjust{
         }
     }
 
-    public addjustId(idName: string, oninputMode = true, changeFunc: (check: boolean) => void = () => {}) {
+    public addjustId(idName: string, oninputMode = true, changeFunc: (check: boolean,styleData: object) => void = () => {}) {
         let elem = document.getElementById(idName);
         this.addjustElem(elem, oninputMode, changeFunc);
     }
 
-    public addjustAll(changeFunc: (check: boolean) => void = () => {}) {
+    public addjustAll(changeFunc: (check: boolean,styleData: object) => void = () => {}) {
         // 全てのtextareaに適用する
         let textareas = document.querySelectorAll("textarea");
         let addjust = this;
