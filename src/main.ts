@@ -46,11 +46,21 @@ class TextareaAutoHeightAddjust{
         console.log(test);
     }
 
-    addjustElem(elem) {
+    addjustElem(elem,oninputMode=true) {
         const elemCheck = elem instanceof HTMLElement;
 
         if (elemCheck) {
-            this.addjustElemCore(elem);
+            let addjust = this;
+
+            if (oninputMode) {
+                // イベント追加なら
+                elem.addEventListener("input", function () {
+                    addjust.addjustElemCore(elem);
+                });
+            } else {
+                // 1回のみの実行なら
+                this.addjustElemCore(elem);
+            }
         } else {
             console.error("これはHTMLではないか、このHTMLは見つかりません");
         }
