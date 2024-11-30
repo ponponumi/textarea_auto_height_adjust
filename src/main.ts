@@ -12,7 +12,7 @@ class TextareaAutoHeightAddjust{
 
         if (!textareaCheck) {
             // テキストエリアでない場合は終了
-            console.log("これはtextareaではありません");
+            console.error("これはtextareaではありません");
             return;
         }
 
