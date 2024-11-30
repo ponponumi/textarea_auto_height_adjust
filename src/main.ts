@@ -8,6 +8,9 @@ class TextareaAutoHeightAddjust{
     }
 
     addjustElemCore(elem: HTMLElement) {
+        // スクロールバーを非表示にする
+        elem.style.scrollbarWidth = "none";
+
         // 要素を判定する
         console.log(elem);
         let height: string = getComputedStyle(elem).getPropertyValue("height");
