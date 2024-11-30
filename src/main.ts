@@ -8,6 +8,14 @@ class TextareaAutoHeightAddjust{
     }
 
     addjustElemCore(elem: HTMLElement) {
+        const textareaCheck = (elem.tagName === "TEXTAREA");
+
+        if (!textareaCheck) {
+            // テキストエリアでない場合は終了
+            console.log("これはtextareaではありません");
+            return;
+        }
+
         // スクロールバーを非表示にする
         elem.style.scrollbarWidth = "none";
 
