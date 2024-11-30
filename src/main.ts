@@ -14,6 +14,15 @@ class TextareaAutoHeightAddjust{
 
         // スクロールの高さを取得
         let scrollHeight = elem.scrollHeight;
+
+        let test: object = {
+            "height": height,
+            "paddingTop": paddingTop,
+            "paddingBottom": paddingBottom,
+            "scrollHeight": scrollHeight,
+        };
+
+        console.log(test);
     }
 
     addjustElem(elem) {
