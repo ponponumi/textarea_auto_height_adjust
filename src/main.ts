@@ -10,3 +10,5 @@ class TextareaAutoHeightAddjust{
         }
     }
 }
+
+export default new TextareaAutoHeightAddjust();
