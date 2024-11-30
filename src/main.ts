@@ -65,6 +65,11 @@ class TextareaAutoHeightAddjust{
             console.error("これはHTMLではないか、このHTMLは見つかりません");
         }
     }
+
+    addjustId(idName: string, oninputMode = true) {
+        let elem = document.getElementById(idName);
+        this.addjustElem(elem, oninputMode);
+    }
 }
 
 export default new TextareaAutoHeightAddjust();
