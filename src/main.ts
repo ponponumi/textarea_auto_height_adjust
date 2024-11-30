@@ -86,8 +86,6 @@ class TextareaAutoHeightAddjust{
             "borderBottomValue": borderBottom,
         };
 
-        console.log(styleData);
-
         changeFunc(changeCheck,styleData);
     }
 
