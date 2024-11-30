@@ -85,7 +85,7 @@ class TextareaAutoHeightAddjust{
         console.log(test);
     }
 
-    public addjustElem(elem,oninputMode=true) {
+    public addjustElem(elem,oninputMode=true,changeFunc: (check: boolean) => void = () => {}) {
         const elemCheck = elem instanceof HTMLElement;
 
         if (elemCheck) {
@@ -94,29 +94,29 @@ class TextareaAutoHeightAddjust{
             if (oninputMode) {
                 // イベント追加なら
                 elem.addEventListener("input", function () {
-                    addjust.addjustElemCore(elem);
+                    addjust.addjustElemCore(elem,changeFunc);
                 });
             } else {
                 // 1回のみの実行なら
-                this.addjustElemCore(elem);
+                this.addjustElemCore(elem,changeFunc);
             }
         } else {
             console.error("これはHTMLではないか、このHTMLは見つかりません");
         }
     }
 
-    public addjustId(idName: string, oninputMode = true) {
+    public addjustId(idName: string, oninputMode = true, changeFunc: (check: boolean) => void = () => {}) {
         let elem = document.getElementById(idName);
-        this.addjustElem(elem, oninputMode);
+        this.addjustElem(elem, oninputMode, changeFunc);
     }
 
-    public addjustAll() {
+    public addjustAll(changeFunc: (check: boolean) => void = () => {}) {
         // 全てのtextareaに適用する
         let textareas = document.querySelectorAll("textarea");
         let addjust = this;
 
         textareas.forEach(textarea => {
-            addjust.addjustElem(textarea);
+            addjust.addjustElem(textarea, true, changeFunc);
         });
     }
 }
