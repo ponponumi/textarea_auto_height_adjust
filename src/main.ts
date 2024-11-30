@@ -70,14 +70,20 @@ class TextareaAutoHeightAddjust{
 
         let styleData: object = {
             "height": heightNum,
+            "heightValue": height,
             "paddingTop": paddingTopNum,
+            "paddingTopValue": paddingTop,
             "paddingBottom": paddingBottomNum,
+            "paddingBottomValue": paddingBottom,
             "scrollHeight": scrollHeight,
             "minHeight": minHeightNum,
+            "minHeightValue": minHeight,
             "newHeight": newHeight,
             "boxSizing": boxSizingCheck,
-            "borderTopNum": borderTopNum,
-            "borderBottomNum": borderBottomNum,
+            "borderTop": borderTopNum,
+            "borderTopValue": borderTop,
+            "borderBottom": borderBottomNum,
+            "borderBottomValue": borderBottom,
         };
 
         console.log(styleData);
