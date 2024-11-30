@@ -7,7 +7,7 @@ class TextareaAutoHeightAddjust{
         return output;
     }
 
-    private addjustElemCore(elem: HTMLElement) {
+    private addjustElemCore(elem: HTMLElement, changeFunc: (check: boolean) => void = () => {}) {
         const textareaCheck = (elem.tagName === "TEXTAREA");
 
         if (!textareaCheck) {
@@ -59,6 +59,16 @@ class TextareaAutoHeightAddjust{
 
         // 新たな高さを反映
         elem.style.height = String(newHeight) + "px";
+
+        // 処理後にコールバック関数を実行する
+        let changeCheck = false;
+
+        if (heightNum !== newHeight) {
+            // 高さが変わった場合
+            changeCheck = true;
+        }
+
+        changeFunc(changeCheck);
 
         let test: object = {
             "height": heightNum,
