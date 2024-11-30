@@ -35,6 +35,13 @@ class TextareaAutoHeightAddjust{
         let paddingTopNum: number = this.numberConvert(paddingTop);
         let paddingBottomNum: number = this.numberConvert(paddingBottom);
 
+        // ボーダーを取得
+        let borderTop: string = getComputedStyle(elem).getPropertyValue("border-top");
+        let borderBottom: string = getComputedStyle(elem).getPropertyValue("border-bottom");
+
+        let borderTopNum: number = this.numberConvert(borderTop);
+        let borderBottomNum: number = this.numberConvert(borderBottom);
+
         // スクロールの高さを取得
         let scrollHeight: number = elem.scrollHeight;
 
@@ -61,6 +68,8 @@ class TextareaAutoHeightAddjust{
             "minHeight": minHeightNum,
             "newHeight": newHeight,
             "boxSizing": boxSizingCheck,
+            "borderTopNum": borderTopNum,
+            "borderBottomNum": borderBottomNum,
         };
 
         console.log(test);
