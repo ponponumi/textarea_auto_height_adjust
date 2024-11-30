@@ -6,7 +6,7 @@ class TextareaAutoHeightAddjust{
         if (elemCheck) {
             console.log(elem);
         } else {
-            console.log("これはHTML要素ではありません");
+            console.error("このHTMLは見つかりません");
         }
     }
 }
