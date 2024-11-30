@@ -1,5 +1,5 @@
 class TextareaAutoHeightAddjust{
-    numberConvert(input: string) {
+    private numberConvert(input: string) {
         // 数字に変換する
         input = input.replace(/[^0-9.]/g, '');
         let output: number = Number(input);
@@ -7,7 +7,7 @@ class TextareaAutoHeightAddjust{
         return output;
     }
 
-    addjustElemCore(elem: HTMLElement) {
+    private addjustElemCore(elem: HTMLElement) {
         const textareaCheck = (elem.tagName === "TEXTAREA");
 
         if (!textareaCheck) {
@@ -75,7 +75,7 @@ class TextareaAutoHeightAddjust{
         console.log(test);
     }
 
-    addjustElem(elem,oninputMode=true) {
+    public addjustElem(elem,oninputMode=true) {
         const elemCheck = elem instanceof HTMLElement;
 
         if (elemCheck) {
@@ -95,12 +95,12 @@ class TextareaAutoHeightAddjust{
         }
     }
 
-    addjustId(idName: string, oninputMode = true) {
+    public addjustId(idName: string, oninputMode = true) {
         let elem = document.getElementById(idName);
         this.addjustElem(elem, oninputMode);
     }
 
-    addjustAll() {
+    public addjustAll() {
         // 全てのtextareaに適用する
         let textareas = document.querySelectorAll("textarea");
         let addjust = this;
