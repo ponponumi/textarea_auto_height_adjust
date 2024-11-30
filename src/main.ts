@@ -11,6 +11,9 @@ class TextareaAutoHeightAddjust{
 
         paddingTop = paddingTop.replace(/\D/g, '');
         paddingBottom = paddingBottom.replace(/\D/g, '');
+
+        // スクロールの高さを取得
+        let scrollHeight = elem.scrollHeight;
     }
 
     addjustElem(elem) {
