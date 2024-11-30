@@ -31,6 +31,9 @@ class TextareaAutoHeightAddjust{
         // 新たな高さを計算
         let newHeight: number = scrollHeight + paddingTopNum + paddingBottomNum;
 
+        // 新たな高さを反映
+        elem.style.height = String(newHeight) + "px";
+
         let test: object = {
             "height": heightNum,
             "paddingTop": paddingTopNum,
