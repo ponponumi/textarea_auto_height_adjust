@@ -36,8 +36,8 @@ class TextareaAutoHeightAddjust{
         let paddingBottomNum: number = this.numberConvert(paddingBottom);
 
         // ボーダーを取得
-        let borderTop: string = getComputedStyle(elem).getPropertyValue("border-top");
-        let borderBottom: string = getComputedStyle(elem).getPropertyValue("border-bottom");
+        let borderTop: string = getComputedStyle(elem).getPropertyValue("border-top-width");
+        let borderBottom: string = getComputedStyle(elem).getPropertyValue("border-bottom-width");
 
         let borderTopNum: number = this.numberConvert(borderTop);
         let borderBottomNum: number = this.numberConvert(borderBottom);
