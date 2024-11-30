@@ -4,3 +4,7 @@ textarea{
     min-height: 100px;
     line-height: 20px;
 }
+
+#message{
+    box-sizing: border-box;
+}
