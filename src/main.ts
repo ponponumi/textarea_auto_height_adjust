@@ -28,12 +28,16 @@ class TextareaAutoHeightAddjust{
         let minHeight: string = getComputedStyle(elem).getPropertyValue("min-height");
         let minHeightNum: number = this.numberConvert(minHeight);
 
+        // 新たな高さを計算
+        let newHeight: number = scrollHeight + paddingTopNum + paddingBottomNum;
+
         let test: object = {
             "height": heightNum,
             "paddingTop": paddingTopNum,
             "paddingBottom": paddingBottomNum,
             "scrollHeight": scrollHeight,
             "minHeight": minHeightNum,
+            "newHeight": newHeight,
         };
 
         console.log(test);
