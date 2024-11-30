@@ -11,6 +11,9 @@ class TextareaAutoHeightAddjust{
         // スクロールバーを非表示にする
         elem.style.scrollbarWidth = "none";
 
+        // box-sizingを確認
+        let boxSizingCheck = getComputedStyle(elem).getPropertyValue("box-sizing");
+
         // 要素を判定する
         console.log(elem);
         let height: string = getComputedStyle(elem).getPropertyValue("height");
@@ -34,6 +37,11 @@ class TextareaAutoHeightAddjust{
         // 新たな高さを計算
         let newHeight: number = scrollHeight + paddingTopNum + paddingBottomNum;
 
+        if (boxSizingCheck === "content-box") {
+            // content-boxなら、パディングを含めないように変更
+            newHeight = scrollHeight;
+        }
+
         // 新たな高さを反映
         elem.style.height = String(newHeight) + "px";
 
@@ -44,6 +52,7 @@ class TextareaAutoHeightAddjust{
             "scrollHeight": scrollHeight,
             "minHeight": minHeightNum,
             "newHeight": newHeight,
+            "boxSizing": boxSizingCheck,
         };
 
         console.log(test);
