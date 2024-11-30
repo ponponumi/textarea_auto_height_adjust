@@ -11,6 +11,8 @@ class TextareaAutoHeightAddjust{
 
         if (elemCheck) {
             this.addjustElemCore(elem);
+        } else {
+            console.error("これはHTMLではないか、このHTMLは見つかりません");
         }
     }
 }
