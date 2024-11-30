@@ -68,9 +68,7 @@ class TextareaAutoHeightAddjust{
             changeCheck = true;
         }
 
-        changeFunc(changeCheck);
-
-        let test: object = {
+        let styleData: object = {
             "height": heightNum,
             "paddingTop": paddingTopNum,
             "paddingBottom": paddingBottomNum,
@@ -82,7 +80,9 @@ class TextareaAutoHeightAddjust{
             "borderBottomNum": borderBottomNum,
         };
 
-        console.log(test);
+        console.log(styleData);
+
+        changeFunc(changeCheck);
     }
 
     public addjustElem(elem,oninputMode=true,changeFunc: (check: boolean) => void = () => {}) {
