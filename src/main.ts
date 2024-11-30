@@ -1,9 +1,17 @@
 class TextareaAutoHeightAddjust{
-    addjustElem(elem: HTMLElement) {
+    addjustElemCore(elem: HTMLElement) {
         // 要素を判定する
         console.log(elem);
         let height = getComputedStyle(elem).getPropertyValue("height");
         height = height.replace(/\D/g, '');
+    }
+
+    addjustElem(elem) {
+        const elemCheck = elem instanceof HTMLElement;
+
+        if (elemCheck) {
+            this.addjustElemCore(elem);
+        }
     }
 }
 
