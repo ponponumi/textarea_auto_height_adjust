@@ -50,7 +50,7 @@ class TextareaAutoHeightAddjust{
         let minHeightNum: number = this.numberConvert(minHeight);
 
         // 新たな高さを計算
-        let newHeight: number = scrollHeight;
+        let newHeight: number = scrollHeight + borderTopNum + borderBottomNum;
 
         if (boxSizingCheck === "content-box") {
             // content-boxなら、パディングを含めないように変更
