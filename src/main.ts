@@ -4,6 +4,13 @@ class TextareaAutoHeightAddjust{
         console.log(elem);
         let height = getComputedStyle(elem).getPropertyValue("height");
         height = height.replace(/\D/g, '');
+
+        // パディングを取得
+        let paddingTop = getComputedStyle(elem).getPropertyValue("padding-top");
+        let paddingBottom = getComputedStyle(elem).getPropertyValue("padding-bottom");
+
+        paddingTop = paddingTop.replace(/\D/g, '');
+        paddingBottom = paddingBottom.replace(/\D/g, '');
     }
 
     addjustElem(elem) {
