@@ -1,4 +1,12 @@
 class TextareaAutoHeightAddjust{
+    numberConvert(input: string) {
+        // 数字に変換する
+        input = input.replace(/[^0-9.]/g, '');
+        let output: number = Number(input);
+
+        return output;
+    }
+
     addjustElemCore(elem: HTMLElement) {
         // 要素を判定する
         console.log(elem);
