@@ -10,18 +10,18 @@ class TextareaAutoHeightAddjust{
     addjustElemCore(elem: HTMLElement) {
         // 要素を判定する
         console.log(elem);
-        let height = getComputedStyle(elem).getPropertyValue("height");
+        let height: string = getComputedStyle(elem).getPropertyValue("height");
         let heightNum: number = this.numberConvert(height);
 
         // パディングを取得
-        let paddingTop = getComputedStyle(elem).getPropertyValue("padding-top");
-        let paddingBottom = getComputedStyle(elem).getPropertyValue("padding-bottom");
+        let paddingTop: string = getComputedStyle(elem).getPropertyValue("padding-top");
+        let paddingBottom: string = getComputedStyle(elem).getPropertyValue("padding-bottom");
 
         let paddingTopNum: number = this.numberConvert(paddingTop);
         let paddingBottomNum: number = this.numberConvert(paddingBottom);
 
         // スクロールの高さを取得
-        let scrollHeight = elem.scrollHeight;
+        let scrollHeight: number = elem.scrollHeight;
 
         let test: object = {
             "height": heightNum,
