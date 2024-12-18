@@ -34,7 +34,7 @@ import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 
 #### elem
 
-こちらには、HTML要素を渡して下さい。
+こちらには、textareaタグのHTML要素を渡して下さい。
 
 #### oninputEventAddMode
 
