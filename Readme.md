@@ -46,6 +46,36 @@ falseを渡した場合は、1回のみ動作します。
 
 省略した場合はtrueになります。
 
+#### changeFunc
+
+こちらには、textareaの調整後、実行するコールバック関数を渡します。
+
+省略した場合、空の関数を渡します。
+
+check変数は、高さが変わったらtrue、変わらなかったらfalseを渡します。
+
+styleData変数は、次の形式のオブジェクトを渡します。
+
+```json
+{
+    "height": 100,                  // 高さのピクセル数を数値で返します
+    "heightValue": "100px",         // 高さのピクセル数を文字列で返します
+    "paddingTop": 2,                // 上部のパディングのピクセル数を数値で返します
+    "paddingTopValue": "2px",       // 上部のパディングのピクセル数を文字列で返します
+    "paddingBottom": 2,             // 下部のパディングのピクセル数を数値で返します
+    "paddingBottomValue": "2px",    // 下部のパディングのピクセル数を文字列で返します
+    "scrollHeight": 90,             // textarea内部のscrollHeightを数値で返します
+    "minHeight": 100,               // 最小の高さを数値で返します
+    "minHeightValue": "100px",      // 最小の高さを文字列で返します
+    "newHeight": 99.6,              // 新たな高さを数値で返します
+    "boxSizing": "border-box",      // box-sizingの設定を文字列で返します
+    "borderTop": 4.8,               // 上部の枠線の幅を数値で返します
+    "borderTopValue": "4.8px",      // 上部の枠線の幅を文字列で返します
+    "borderBottom": 4.8,            // 下部の枠線の幅を数値で返します
+    "borderBottomValue": "4.8px"    // 下部の枠線の幅を文字列で返します
+}
+```
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
