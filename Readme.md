@@ -32,6 +32,10 @@ import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 * oninputEventAddMode?: boolean
 * changeFunc?: (check: boolean, styleData: object) => void
 
+#### elem
+
+こちらには、HTML要素を渡して下さい。
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
