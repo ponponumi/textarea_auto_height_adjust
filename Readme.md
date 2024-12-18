@@ -20,6 +20,10 @@ import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 
 ※インスタンスを生成する必要はありません。
 
+## メソッドについて
+
+メソッドについては、次のものをご用意しております。
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
