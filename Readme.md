@@ -26,6 +26,8 @@ import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 
 ### addjustElem
 
+こちらは、textareaタグを渡し、高さの自動調整を行います。
+
 引数は、左から次のようになっています。
 
 * elem: any
