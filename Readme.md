@@ -96,13 +96,13 @@ styleData変数は、次の形式のオブジェクトを渡します。
 
 こちらには、oninputイベントを追加するかどうかを、booleanで渡して下さい。
 
-addjustElemメソッドと、挙動は同じです。
+addjustElemメソッドのoninputEventAddModeと、挙動は同じです。
 
 #### changeFunc
 
 こちらには、textareaの調整後、実行するコールバック関数を渡します。
 
-addjustElemメソッドと、挙動は同じです。
+addjustElemメソッドのchangeFuncと、挙動は同じです。
 
 ## NPMでのインストールについて
 
