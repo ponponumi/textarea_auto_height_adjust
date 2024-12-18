@@ -15,7 +15,7 @@
 次のようにインポートしてください。
 
 ```typescript
-import TextareaAuthHeightAdjust from "textarea-auto-height-adjust";
+import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 ```
 
 ## NPMでのインストールについて
