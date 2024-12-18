@@ -89,13 +89,13 @@ class TextareaAutoHeightAddjust{
         changeFunc(changeCheck,styleData);
     }
 
-    public addjustElem(elem,oninputMode=true,changeFunc: (check: boolean,styleData: object) => void = () => {}) {
+    public addjustElem(elem,oninputEventAddMode=true,changeFunc: (check: boolean,styleData: object) => void = () => {}) {
         const elemCheck = elem instanceof HTMLElement;
 
         if (elemCheck) {
             let addjust = this;
 
-            if (oninputMode) {
+            if (oninputEventAddMode) {
                 // イベント追加なら
                 elem.addEventListener("input", function () {
                     addjust.addjustElemCore(elem,changeFunc);
@@ -109,9 +109,9 @@ class TextareaAutoHeightAddjust{
         }
     }
 
-    public addjustId(idName: string, oninputMode = true, changeFunc: (check: boolean,styleData: object) => void = () => {}) {
+    public addjustId(idName: string, oninputEventAddMode = true, changeFunc: (check: boolean,styleData: object) => void = () => {}) {
         let elem = document.getElementById(idName);
-        this.addjustElem(elem, oninputMode, changeFunc);
+        this.addjustElem(elem, oninputEventAddMode, changeFunc);
     }
 
     public addjustAll(changeFunc: (check: boolean,styleData: object) => void = () => {}) {
