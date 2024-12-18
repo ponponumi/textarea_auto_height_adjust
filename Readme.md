@@ -76,6 +76,14 @@ styleData変数は、次の形式のオブジェクトを渡します。
 }
 ```
 
+### addjustId
+
+引数は、左から次のようになります。
+
+* idName: string
+* oninputEventAddMode?: boolean
+* changeFunc?: (check: boolean, styleData: object) => void
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
