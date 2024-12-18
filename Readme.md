@@ -10,6 +10,14 @@
 
 <a href="https://textarea-auto-height-addjust.ponponumi.com/" target="_blank" rel="noopener noreferrer">こちらから、使い勝手を試すことができます。</a>
 
+## インポート方法について
+
+次のようにインポートしてください。
+
+```typescript
+import TextareaAuthHeightAdjust from "textarea-auto-height-adjust";
+```
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
