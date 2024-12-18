@@ -6,6 +6,10 @@
 
 また、文字を消して高さが小さくなると、その分textareaの高さも小さくなります。(min-heightよりは小さくなりません)
 
+## 本ライブラリの使い勝手について
+
+<a href="https://textarea-auto-height-addjust.ponponumi.com/" target="_blank" rel="noopener noreferrer">こちらから、使い勝手を試すことができます。</a>
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
