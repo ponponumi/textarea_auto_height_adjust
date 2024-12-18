@@ -80,6 +80,8 @@ styleData変数は、次の形式のオブジェクトを渡します。
 
 ### addjustId
 
+こちらは、textareaタグのIDを指定し、高さの自動調整を行います。
+
 引数は、左から次のようになります。
 
 * idName: string
