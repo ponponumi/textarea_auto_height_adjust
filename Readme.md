@@ -1,6 +1,6 @@
 # textarea_auto_height_adjust
 
-このパッケージは、HTMLのtextareaタグの高さを、調整するライブラリです。
+このパッケージは、HTMLのtextareaタグの高さを調整する、TypeScriptライブラリです。
 
 改行や折り返しで、textareaからはみ出ると、自動的にtextareaの高さを調整し、はみ出なくします。
 
