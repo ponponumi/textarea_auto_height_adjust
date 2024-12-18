@@ -84,6 +84,10 @@ styleData変数は、次の形式のオブジェクトを渡します。
 * oninputEventAddMode?: boolean
 * changeFunc?: (check: boolean, styleData: object) => void
 
+#### idName
+
+こちらには、HTML要素のID名を文字列で渡して下さい。
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
