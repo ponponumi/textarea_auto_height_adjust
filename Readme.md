@@ -88,6 +88,12 @@ styleData変数は、次の形式のオブジェクトを渡します。
 
 こちらには、textareaタグのID名を文字列で渡して下さい。
 
+#### oninputEventAddMode
+
+こちらには、oninputイベントを追加するかどうかを、booleanで渡して下さい。
+
+addjustElemメソッドと、挙動は同じです。
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
