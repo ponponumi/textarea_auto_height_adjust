@@ -144,6 +144,14 @@ import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 AutoAdjust.addjustId("message");
 ```
 
+### 全てのtextareaに適用する場合
+
+```typescript
+import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
+
+AutoAdjust.addjustAll();
+```
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
