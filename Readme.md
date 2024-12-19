@@ -133,7 +133,7 @@ addjustElemメソッドのchangeFuncと、挙動は同じです。
 ```typescript
 import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 
-AutoAdjust.addjustElem(document.getElementById("message"));
+AutoAdjust.adjustElem(document.getElementById("message"));
 ```
 
 ### textarea要素のIDを渡す場合
@@ -141,7 +141,7 @@ AutoAdjust.addjustElem(document.getElementById("message"));
 ```typescript
 import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 
-AutoAdjust.addjustId("message");
+AutoAdjust.adjustId("message");
 ```
 
 ### 全てのtextareaに適用する場合
@@ -149,7 +149,7 @@ AutoAdjust.addjustId("message");
 ```typescript
 import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 
-AutoAdjust.addjustAll();
+AutoAdjust.adjustAll();
 ```
 
 ### textarea要素のoninput属性から、呼び出す場合
@@ -182,7 +182,7 @@ window.TextareaAutoHeightAdjust = TextareaAutoHeightAdjust;
 * こちらの方法は、「やろうと思えば可能」という意味なので、通常はこの方法を使わない事をお勧めします。
 
 ```html
-<textarea name="message" id="message" oninput="TextareaAutoHeightAdjust.addjustElem(this, false)"></textarea>
+<textarea name="message" id="message" oninput="TextareaAutoHeightAdjust.adjustElem(this, false)"></textarea>
 ```
 
 ### コールバック関数を使う場合
