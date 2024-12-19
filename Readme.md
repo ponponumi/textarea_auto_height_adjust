@@ -136,6 +136,22 @@ import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 AutoAdjust.addjustElem(document.getElementById("message"));
 ```
 
+### textarea要素のIDを渡す場合
+
+```typescript
+import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
+
+AutoAdjust.addjustId("message");
+```
+
+### 全てのtextareaに適用する場合
+
+```typescript
+import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
+
+AutoAdjust.addjustAll();
+```
+
 ### textarea要素のoninput属性から、呼び出す場合
 
 TypeScriptコードの場合、次のように記述して、グローバル変数に追加してください。
@@ -167,22 +183,6 @@ window.TextareaAutoHeightAdjust = TextareaAutoHeightAdjust;
 
 ```html
 <textarea name="message" id="message" oninput="TextareaAutoHeightAdjust.addjustElem(this, false)"></textarea>
-```
-
-### textarea要素のIDを渡す場合
-
-```typescript
-import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
-
-AutoAdjust.addjustId("message");
-```
-
-### 全てのtextareaに適用する場合
-
-```typescript
-import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
-
-AutoAdjust.addjustAll();
 ```
 
 ## NPMでのインストールについて
