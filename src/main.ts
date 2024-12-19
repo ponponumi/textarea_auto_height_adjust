@@ -1,5 +1,5 @@
 /*!
- * textarea-auto-height-addjust JavaScript Library
+ * textarea-auto-height-adjust JavaScript Library
  * (C) 2024 ponponumi
  * Released under the MIT license
  */
@@ -127,6 +127,18 @@ class TextareaAutoHeightAddjust{
         textareas.forEach(textarea => {
             addjust.addjustElem(textarea, true, changeFunc);
         });
+    }
+
+    public adjustElem(elem, oninputEventAddMode = true, changeFunc: (check: boolean, styleData: object) => void = () => { }) {
+        this.addjustElem(elem, oninputEventAddMode, changeFunc);
+    }
+
+    public adjustId(idName: string, oninputEventAddMode = true, changeFunc: (check: boolean, styleData: object) => void = () => { }) {
+        this.addjustId(idName, oninputEventAddMode, changeFunc);
+    }
+
+    public adjustAll(changeFunc: (check: boolean, styleData: object) => void = () => { }) {
+        this.addjustAll(changeFunc);
     }
 }
 
