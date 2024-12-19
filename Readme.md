@@ -136,6 +136,22 @@ import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 AutoAdjust.addjustElem(document.getElementById("message"));
 ```
 
+### textarea要素のoninput属性から、呼び出す場合
+
+TypeScriptコードの場合、次のように記述して、グローバル変数に追加してください。
+
+```typescript
+import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
+
+declare global {
+    interface Window {
+        TextareaAutoHeightAdjust: typeof TextareaAutoHeightAdjust;
+    }
+}
+
+window.TextareaAutoHeightAdjust = TextareaAutoHeightAdjust;
+```
+
 ### textarea要素のIDを渡す場合
 
 ```typescript
