@@ -160,6 +160,15 @@ import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 window.TextareaAutoHeightAdjust = TextareaAutoHeightAdjust;
 ```
 
+上記のようにした場合、HTMLには次のように記述してください。
+
+* この場合、第2引数は必ずfalseにしてください。trueにすると、イベントが大量に登録されます。
+* こちらの方法は、「やろうと思えば可能」という意味なので、通常はこの方法を使わない事をお勧めします。
+
+```html
+<textarea name="message" id="message" oninput="TextareaAutoHeightAdjust.addjustElem(this, false)"></textarea>
+```
+
 ### textarea要素のIDを渡す場合
 
 ```typescript
