@@ -126,6 +126,16 @@ addjustElemメソッドのchangeFuncと、挙動は同じです。
 <textarea name="message" id="message"></textarea>
 ```
 
+この場合、次のいずれかの方法で、追加する事ができます。
+
+### HTML要素を直接渡す場合
+
+```typescript
+import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
+
+AutoAdjust.addjustElem(document.getElementById("message"));
+```
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
