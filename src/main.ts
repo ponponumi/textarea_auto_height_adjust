@@ -1,5 +1,5 @@
 /*!
- * textarea-auto-height-addjust JavaScript Library
+ * textarea-auto-height-adjust JavaScript Library
  * (C) 2024 ponponumi
  * Released under the MIT license
  */
