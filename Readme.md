@@ -24,7 +24,7 @@ import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 
 メソッドについては、次のものをご用意しております。
 
-### addjustElem / adjustElem
+### adjustElem
 
 こちらは、textareaタグを渡し、高さの自動調整を行います。
 
@@ -78,7 +78,7 @@ styleData変数は、次の形式のオブジェクトを渡します。
 }
 ```
 
-### addjustId / adjustId
+### adjustId
 
 こちらは、textareaタグのIDを指定し、高さの自動調整を行います。
 
@@ -104,7 +104,7 @@ addjustElemメソッドのoninputEventAddModeと、挙動は同じです。
 
 addjustElemメソッドのchangeFuncと、挙動は同じです。
 
-### addjustAll / adjustAll
+### adjustAll
 
 こちらは、全てtextareaタグを指定し、高さの自動調整を行います。
 
