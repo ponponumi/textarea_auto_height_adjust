@@ -118,6 +118,14 @@ addjustElemメソッドのchangeFuncと、挙動は同じです。
 
 addjustElemメソッドのchangeFuncと、挙動は同じです。
 
+## コードの例について
+
+次のHTMLがあった場合、次の方法でイベントを追加できます。
+
+```html
+<textarea name="message" id="message"></textarea>
+```
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
