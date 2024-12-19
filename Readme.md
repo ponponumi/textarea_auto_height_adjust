@@ -112,6 +112,12 @@ addjustElemメソッドのchangeFuncと、挙動は同じです。
 
 * changeFunc?: (check: boolean, styleData: object) => void
 
+#### changeFunc
+
+こちらには、textareaの調整後、実行するコールバック関数を渡します。
+
+addjustElemメソッドのchangeFuncと、挙動は同じです。
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
