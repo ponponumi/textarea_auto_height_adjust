@@ -128,7 +128,7 @@ addjustElemメソッドのchangeFuncと、挙動は同じです。
 
 この場合、次のいずれかの方法で、追加する事ができます。
 
-### HTML要素を直接渡す場合
+### textarea要素を直接渡す場合
 
 ```typescript
 import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
@@ -136,7 +136,7 @@ import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 AutoAdjust.addjustElem(document.getElementById("message"));
 ```
 
-### HTML要素のIDを渡す場合
+### textarea要素のIDを渡す場合
 
 ```typescript
 import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
