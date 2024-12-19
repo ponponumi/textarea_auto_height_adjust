@@ -9,7 +9,8 @@ declare global {
 
 window.AutoAdjust = AutoAdjust;
 
-AutoAdjust.adjustElem(document.getElementById("message"));
+// AutoAdjust.adjustElem(documenst.getElementById("message"));
+AutoAdjust.adjustId("message");
 // AutoAdjust.addjustElem(document.getElementById("messageElem"));
 
 /*
