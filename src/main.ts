@@ -136,6 +136,10 @@ class TextareaAutoHeightAddjust{
     public adjustId(idName: string, oninputEventAddMode = true, changeFunc: (check: boolean, styleData: object) => void = () => { }) {
         this.addjustId(idName, oninputEventAddMode, changeFunc);
     }
+
+    public adjustAll(changeFunc: (check: boolean, styleData: object) => void = () => { }) {
+        this.addjustAll(changeFunc);
+    }
 }
 
 export default new TextareaAutoHeightAddjust();
