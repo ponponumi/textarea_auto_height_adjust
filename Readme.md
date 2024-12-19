@@ -152,6 +152,14 @@ declare global {
 window.TextareaAutoHeightAdjust = TextareaAutoHeightAdjust;
 ```
 
+JavaScriptコードの場合は、次の方法で追加できます。
+
+```javascript
+import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
+
+window.TextareaAutoHeightAdjust = TextareaAutoHeightAdjust;
+```
+
 ### textarea要素のIDを渡す場合
 
 ```typescript
