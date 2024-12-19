@@ -1,8 +1,12 @@
 {
   "name": "textarea-auto-height-adjust",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "src/main.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ponponumi/textarea_auto_height_adjust.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
