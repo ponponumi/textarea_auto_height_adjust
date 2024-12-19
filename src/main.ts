@@ -1,3 +1,8 @@
+/*!
+ * textarea-auto-height-addjust JavaScript Library
+ * (C) 2024 ponponumi
+ * Released under the MIT license
+ */
 class TextareaAutoHeightAddjust{
     private numberConvert(input: string) {
         // 数字に変換する
