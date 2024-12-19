@@ -185,6 +185,27 @@ window.TextareaAutoHeightAdjust = TextareaAutoHeightAdjust;
 <textarea name="message" id="message" oninput="TextareaAutoHeightAdjust.addjustElem(this, false)"></textarea>
 ```
 
+### コールバック関数を使う場合
+
+次のようにすると、コールバック関数を利用できます。
+
+今回は、addjustElemメソッドの場合のみを解説しますが、コールバック関数の挙動は、addjustIdメソッド、addjustAllメソッドでも同じです。
+
+
+```typescript
+import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
+
+AutoAdjust.addjustElem(document.getElementById("message"), true, function (check, styleData) {
+    if(check){
+        console.log("高さが変わりました");
+    }else{
+        console.log("高さが変わりませんでした");
+    }
+
+    console.log(styleData);
+});
+```
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
