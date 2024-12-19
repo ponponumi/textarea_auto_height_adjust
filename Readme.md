@@ -195,7 +195,7 @@ window.TextareaAutoHeightAdjust = TextareaAutoHeightAdjust;
 ```typescript
 import TextareaAutoHeightAdjust from "textarea-auto-height-adjust";
 
-AutoAdjust.addjustElem(document.getElementById("message"), true, function (check, styleData) {
+AutoAdjust.adjustElem(document.getElementById("message"), true, function (check, styleData) {
     if(check){
         console.log("高さが変わりました");
     }else{
