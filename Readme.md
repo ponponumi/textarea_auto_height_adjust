@@ -104,6 +104,14 @@ addjustElemメソッドのoninputEventAddModeと、挙動は同じです。
 
 addjustElemメソッドのchangeFuncと、挙動は同じです。
 
+### addjustAll
+
+こちらは、全てtextareaタグを指定し、高さの自動調整を行います。
+
+引数は、左から次のようになります。
+
+* changeFunc?: (check: boolean, styleData: object) => void
+
 ## NPMでのインストールについて
 
 次のコマンドを実行する事で、インストール可能です。
